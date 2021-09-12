@@ -1,0 +1,186 @@
+*{
+    padding:0;
+    margin:0 auto;
+    box-sizing: border-box;
+}
+section .navbar
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+section .container
+{
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 3px 40px black;
+    background-color: #141e30;
+}
+section .heading{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section .heading img
+{
+    display: inline-block;
+    height:60px;
+    width: 60px;
+    margin:5px 1vw 5px 12vw;
+}
+section .links
+{
+    display: flex;
+    float:right;
+    margin:5px 7vw 5px 1vw;
+    padding:15px;
+    color:gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section .links img
+{
+    display:inline-block;
+    height:30px;
+    width:30px;
+    border-radius: 25px;
+}
+
+section .links a
+{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right:40px;
+    margin-left:10px;
+    margin-top:7px;
+    color: white;
+}
+section .links a:hover{
+    transform:scale(1.1);
+    transition: 1s;
+}
+section .content
+{
+    display:flex;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom,#141e30,#243b55);
+    padding:80px 30px 30px 30px;
+    justify-content: center;
+    align-items: center;
+}
+.component
+{
+    margin:30px;
+    padding:20px;
+    width:47%;
+    height:60%;
+    background-color: #243b55;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.component img
+{
+    width:25%;
+    height:35%;
+
+}
+.component h2
+{
+    margin:20px 0 20px 0;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.component p
+{
+    color:lightgrey;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.component a
+{
+    display: block;
+    width:95%;
+    height:40px;
+    padding:10px;
+    margin:20px 0 0 0;
+    background-color:rgb(14, 28, 48) ;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border:none;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.component a:hover
+{
+    background-color: white;
+    color:rgb(14, 28, 48);
+    transition: 0.5s;
+}
+@media only screen and (max-width:768px){
+    section .links
+    {
+        display: flex;
+        float:right;
+        margin:5px 5vw 5px 1vw;
+        padding:15px;
+        color:gray;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    section .links img
+    {
+        display:inline-block;
+        height:25px;
+        width:25px;
+        border-radius: 25px;
+    }
+    section .links a
+{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right:40px;
+    margin-left:10px;
+    margin-top:7px;
+    color: white;
+}
+section .links a:hover{
+    transform:scale(1.1);
+    transition: 1s;
+}
+    .component
+{
+    margin:30px;
+    padding:20px;
+    width:87%;
+    height:60%;
+    background-color: #243b55;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+}
+@media only screen and (min-width:1380px)
+{
+    .component
+{
+    margin:30px;
+    padding:20px;
+    width:47%;
+    height:62vh;
+    background-color: #243b55;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+}
