@@ -64,6 +64,10 @@ section .links a:hover{
     transform:scale(1.1);
     transition: 1s;
 }
+section .dropdown
+{
+    display:none;
+}
 section .content
 {
     display:flex;
@@ -75,15 +79,14 @@ section .content
 }
 .component
 {
-    margin:30px;
+    margin:20px;
     padding:20px;
-    width:47%;
-    height:60%;
+    width:46%;
+    height:64vh;
     background-color: #243b55;
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .component img
 {
     width:25%;
@@ -129,8 +132,11 @@ section .content
     color:rgb(14, 28, 48);
     transition: 0.5s;
 }
-@media only screen and (max-width:768px){
-    section .links
+@media only screen and (max-width:948px){
+section .links{
+    display: none;
+}
+    /*section .links
     {
         display: flex;
         float:right;
@@ -159,7 +165,35 @@ section .content
 section .links a:hover{
     transform:scale(1.1);
     transition: 1s;
+}*/
+section .dropdown
+{
+    display:inline-flex;
+    float:right;
+    margin:10px 50px 10px 0;
 }
+
+section .dropdown-content
+{
+    display:none;
+    position: absolute;
+    background-color: black;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+section .dropdown-content a {
+    color:white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  section .dropdown-content a:hover {background-color: rgb(54, 53, 53)}
+
+  section .dropdown:hover .dropdown-content {
+    display: block;
+    position:absolute;
+  }  
     .component
 {
     margin:30px;
